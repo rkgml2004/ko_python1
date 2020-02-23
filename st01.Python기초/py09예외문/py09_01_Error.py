@@ -6,3 +6,12 @@
 # 소수점이 있는 숫자 형식의 문자열을 int() 함수로 변환하려고 할 때
 
 # IndexError
+
+
+str = "abc"
+
+while Ture : 
+    try : 
+        a = int(str)
+    except ValueError : 
+        break
