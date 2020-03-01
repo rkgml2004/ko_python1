@@ -35,6 +35,6 @@ else:
 
 # 문자열 추출:
 # "A barking dog"에서 마지막 g 빼고 "A barking do" 를 출력하시오.
-
-
+print(prov[: len(prov)-1])  # "A barking Dog"
+print(prov[: len(prov])  # "A barking Dog"
 # 첫번째 b 문자를 찾고 출력하시오.
