@@ -18,3 +18,14 @@ C:....\py22사용자모듈>   python  입력 후 엔터
 >>> exit()
 
 """
+
+def sum(a, b):
+    return a+b
+
+
+def add(a, b):
+    return a+b
+
+
+def sub(a, b):
+    return a-b
