@@ -20,9 +20,11 @@ import FourCal
 
 
 class MoreFourCal():
-    # class FourCal(object). __int__(self, first=0, secound=0, *avgs, **kwargs)
+    # class FourCal(object). __int__(self, first=0, second=0, *avgs, **kwargs)
     def __init__(self, first=0, second=0)
-            pass
+        super.setFirst(first)
+        super.setSecond(second)
 
     def pow(self):
-        result = super.__first
+        result = super.getfrist() ** 2
+        return result
