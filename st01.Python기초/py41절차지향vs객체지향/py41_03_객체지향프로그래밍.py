@@ -27,7 +27,7 @@
 #       박아현  372     93.0
 #       서준서  247     61.75
 
-# 작업 순서 
+# 작업 순서
 # 클래스를 선언합니다.
 # 학생 리스트를을 선언합니다.
 # Student 인스턴스의 속성에 접근하는 방법
@@ -35,4 +35,39 @@
 # 인스턴스 확인하기
 
 
-# 코딩 하기 
+# 코딩 하기
+class Student:
+    def __init__(self, name, korean, math, english, science):
+        self.name = name
+        self.korean = korean
+        self.math = math
+        self.english = english
+        self.science = science
+
+    def getsum(self):
+        return self.korean + self.math +\
+            self.english + self.science
+
+    def getavg(self):
+        return self.getsum() / 4
+
+    def to_string(self):
+        return "%s\t%s\t%s" % (self.name, self.getsum(), self.getavg())
+
+
+Student = [
+    Student("윤인성", 87, 98, 88, 95),
+    Student("연하진", 92, 98, 96, 98),
+    Student("구지연", 76, 96, 94, 90),
+    Student("나선주", 98, 92, 96, 92),
+    Student("윤아린", 95, 98, 98, 98),
+    Student('윤명월', 64, 88, 92, 92),
+    Student('김미화', 82, 86, 98, 88),
+    Student('김연화', 88, 74, 78, 92),
+    Student('박아현', 97, 92, 88, 95),
+    Student("서준서", 45, 52, 72, 78)
+]
+
+print("이름", "총점", "평균", sep="\t")
+for Student in Student:
+    print(Student.to_string())

@@ -1,0 +1,16 @@
+import os.path
+
+outfile = open("phones.txt", "w")
+
+if os.path.isfile("phones.txt"):
+    print("동일한 이름의 파일이 이미 존재합니다. ")
+else:
+    outfile.write("홍길동 010-1234-5678")
+    outfile.write("김철수 010-1234-5679")
+    outfile.write("김영희 010-1234-5680")
+
+outfile.close()
+
+
+# 파일처리에서 open in terminal  클릭 후 아래 창에 python .\py31_03_filewrite.py 를 치면
+# "동일한 이름의 파일이 이미 존재합니다," 가 입력됨
